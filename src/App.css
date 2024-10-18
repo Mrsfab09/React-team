@@ -4,3 +4,13 @@ body {
   background-color: #222831;
   font-family: "Montserrat", sans-serif;
 }
+@media (min-width: 968px) {
+  img {
+    width: 200px;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 100px;
+  }
+}

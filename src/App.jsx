@@ -7,16 +7,19 @@ function App() {
   return (
     <ListWrapper>
       {twitterAccounts.map((account, index) => (
-        <li key={index} className="flex flex-row gap-10 mb-14 mt-10">
+        <li
+          key={index}
+          className="flex flex-col items-center gap-10 mb-14 mt-10 md:flex-row"
+        >
           <img
             key={index}
-            className="w-72 rounded-full"
+            className="w-48 rounded-full md:w-72"
             src={account.image}
             alt={account.image}
           />
-          <div className="mt-14">
-            <h2 className="text-3xl mb-4">{account.name}</h2>
-            <p className="w-[800px] text-lg font-light mb-8 tracking-wide leading-9">
+          <div className="mt-2 text-center md:text-left md:mt-14">
+            <h2 className="text-2xl mb-4 md:text-3xl">{account.name}</h2>
+            <p className="w-[350px] text-base font-light mb-8 tracking-wide leading-9 md:text-lg md:w-[800px] md:tracking-wide md:leading-9">
               {account.description}
             </p>
             <Button>
